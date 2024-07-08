@@ -14,7 +14,7 @@ rate = st.number_input(
     value=0.833,
     step=0.001,
     min_value=0.0,
-    format=f'{.123:.2%}',
+    format="%0.1f",
 )
 years = st.number_input(
     "Plazo en años",
