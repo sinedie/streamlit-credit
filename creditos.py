@@ -22,7 +22,7 @@ years = st.number_input(
     min_value=1,
 )
 insurance = st.number_input(
-    "Seguro de deuda",
+    "Seguro mensual de deuda",
     value=0,
     min_value=0,
     format="%d",
