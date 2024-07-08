@@ -27,7 +27,7 @@ insurance = st.number_input(
     min_value=0,
     format="%d",
 )
-coin = st.selectbox("Divisa", ("COP", "USD"))
+# coin = st.selectbox("Divisa", ("COP", "USD"))
 
 rate /= 100
 
@@ -38,4 +38,4 @@ years = 12 * years
 
 result = (rate * amount) / (1 - (1 / (1 + rate) ** years))
 
-st.header(f"Cuota mensual : $ {round(result + insurance):,.0f} {coin}")
+st.header(f"Cuota mensual : $ {round(result + insurance):,.0f})
