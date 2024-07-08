@@ -38,4 +38,4 @@ years = 12 * years
 
 result = (rate * amount) / (1 - (1 / (1 + rate) ** years))
 
-st.header(f"Cuota mensual : $ {round(result + insurance):,.0f})
+st.header(f"Cuota mensual : $ {round(result + insurance):,.0f}")
