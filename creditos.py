@@ -7,7 +7,7 @@ amount = st.number_input(
     "Valor del préstamo",
     value=100_000_000,
     min_value=0,
-    format='{:,d}',
+    format="%d",
 )
 rate = st.number_input(
     "Tasa de interés (Ej: 10, 15, 0.5)",
