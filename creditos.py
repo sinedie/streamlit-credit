@@ -16,9 +16,9 @@ rate = st.number_input(
     min_value=0.0,
     format="%f",
 )
-years = st.number_input(
-    "Plazo en años",
-    value=15,
+months = st.number_input(
+    "Plazo en meses",
+    value=180,
     min_value=1,
 )
 insurance = st.number_input(
@@ -34,8 +34,8 @@ rate /= 100
 if rate_type == "Anual":
     rate = (1 + rate) ** (1 / 12) - 1
 
-years = 12 * years
+#years = 12 * years
 
-result = (rate * amount) / (1 - (1 / (1 + rate) ** years))
+result = (rate * amount) / (1 - (1 / (1 + rate) ** months))
 
 st.header(f"Cuota mensual : $ {round(result + insurance):,.0f}")
